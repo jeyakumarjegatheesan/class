@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write a “person” class to hold all the details -->
+   
+        <script>
+        class person 
+        {
+              constructor(Name,Gender,Qualification,Place,Job,Bgroup,age,DOB)
+                {
+                       this.Name = Name;
+                       this.Gender = Gender;
+                       this.Qualification = Qualification;
+                       this.Place = Place;
+                       this.Job = Job;
+                       this.Bgroup = Bgroup;
+                       this.age = age;
+                       this.DOB = DOB;
+                     }
+            getDetails (){
+                return(`The name of the person is ${this.Name} qualification ${this.Qualification} lives in ${this.Place}/-`);
+            }
+
+        }
+        let person1 = new person ("jack","male","BE","chennai","draughtsman","b-positive","32","18/9/1989");
+        let person2 = new person ("jeya","male","DME","RJPM","Project Engineer","B+ve","33","18/09/189");
+        console.log(person1);
+        console.log(person1.getDetails());
+        console.log(person2.getDetails());
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
